@@ -22,4 +22,11 @@ public class AgendaController {
 	log.info("Calling getAllEntries");
 	return this.programmeStoreBean.getAllAgendaEntries();
     }
+
+    @RequestMapping(value="/create")
+    public AgendaEntry create(@RequestBody AgendaEntry content) {
+	log.info(content);
+	this.programmeStoreBean.storeAgendaEntry(content);
+	return content;
+    }
 }

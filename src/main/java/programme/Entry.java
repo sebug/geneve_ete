@@ -11,12 +11,12 @@ import programme.entities.*;
 import java.util.Date;
 import java.util.Calendar;
 
-@Controller
+@RestController
 @SpringBootApplication
 public class Entry {
     @RequestMapping("/")
     String home() {
-	return "index";
+	return "API for Genève en été";
     }
 
     public static void main(String[] args) throws Exception {
