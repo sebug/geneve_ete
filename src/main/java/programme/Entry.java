@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.context.annotation.*;
 import org.springframework.beans.factory.annotation.*;
 
+import programme.entities.*;
+
+import java.util.Date;
+import java.util.Calendar;
+
 @RestController
 @SpringBootApplication
 public class Entry {
