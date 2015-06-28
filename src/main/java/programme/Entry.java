@@ -11,12 +11,12 @@ import programme.entities.*;
 import java.util.Date;
 import java.util.Calendar;
 
-@RestController
+@Controller
 @SpringBootApplication
 public class Entry {
     @RequestMapping("/")
     String home() {
-	return "Welcome to the API";
+	return "index";
     }
 
     public static void main(String[] args) throws Exception {
